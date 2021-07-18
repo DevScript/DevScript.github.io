@@ -9,11 +9,11 @@
 !(function ($) {
   "use strict";
 
-  if($(window).width() > 768) {
-    $('.event-banner')[0].src = './assets/img/events/hackNagpurBannerLong.png'
-  } else {
-    $('.event-banner')[0].src = './assets/img/events/hackNagpurBanner.png'
-  }
+  // if($(window).width() > 768) {
+  //   $('.event-banner')[0].src = './assets/img/events/hackNagpurBannerLong.png'
+  // } else {
+  //   $('.event-banner')[0].src = './assets/img/events/hackNagpurBanner.png'
+  // }
 
   // Preloader
   $(window).on("load", function () {
@@ -24,6 +24,7 @@
           $(this).remove();
         });
     }
+    document.querySelector(".date").innerText = new Date().getFullYear();
   });
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
